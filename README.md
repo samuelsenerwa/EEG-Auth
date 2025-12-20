@@ -16,19 +16,19 @@ This application is a **simulation only** used to:
 
 ## What This Application Does NOT Do
 
-- ❌ Process or collect real EEG data
-- ❌ Use machine learning or AI classification
-- ❌ Perform actual biometric verification
-- ❌ Make security or performance claims
-- ❌ Store personal or identifiable information
+- Process or collect real EEG data
+- Use machine learning or AI classification
+- Perform actual biometric verification
+- Make security or performance claims
+- Store personal or identifiable information
 
 ## What This Application DOES Do
 
-- ✅ Simulates an EEG authentication experience
-- ✅ Uses randomized outcomes (85% success rate)
-- ✅ Collects anonymous survey responses
-- ✅ Stores data locally in CSV format
-- ✅ Provides educational comparison of authentication methods
+- Simulates an EEG authentication experience
+- Uses randomized outcomes (85% success rate)
+- Collects anonymous survey responses
+- Stores data locally in CSV format
+- Provides educational comparison of authentication methods
 
 ## Technical Stack
 

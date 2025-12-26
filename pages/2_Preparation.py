@@ -1,5 +1,6 @@
 import streamlit as st
 import sys
+from pathlib import Path
 sys.path.append('..')
 from utils import init_session_state, apply_custom_css, render_header, render_stepper, render_user_icon
 
@@ -12,6 +13,9 @@ st.set_page_config(
 init_session_state()
 apply_custom_css()
 
+ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
+HEADSET_IMAGE = ASSETS_DIR / "headset.png"
+
 render_header(
     "EEG Authentication Login",
     "Please put on your EEG headset to begin"
@@ -23,7 +27,10 @@ st.markdown('<div class="info-card" style="text-align: center; padding: 3rem 2re
 
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image("assets/headset.png", use_container_width=True)
+    if HEADSET_IMAGE.exists():
+        st.image(HEADSET_IMAGE, use_container_width=True)
+    else:
+        st.warning("Headset image missing from assets directory.")
 
 st.markdown("""
 <p style="font-size: 0.95rem; color: #666; margin: 1.5rem 0; line-height: 1.6;">

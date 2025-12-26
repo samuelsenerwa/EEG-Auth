@@ -34,7 +34,12 @@ def apply_custom_css():
     <style>
     /* Main container styling */
     .main {
-        background-color: #f8f9fa;
+        background: radial-gradient(circle at top, #f2f5ff 0%, #ffffff 45%, #f8f9fc 100%);
+        color: #142044;
+    }
+    
+    .stApp {
+        background: #eef2ff;
     }
     
     /* Header styling */
@@ -170,6 +175,13 @@ def apply_custom_css():
         box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
     }
     
+    /* Ensure radio option text stays readable */
+    .stRadio div[role="radiogroup"] label, 
+    .stRadio div[role="radiogroup"] label p {
+        color: #0f172a !important;
+        font-weight: 500;
+    }
+
     /* Brain icon animation */
     @keyframes pulse {
         0%, 100% { transform: scale(1); }

@@ -14,7 +14,7 @@ init_session_state()
 apply_custom_css()
 
 ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
-HEADSET_SVG = ASSETS_DIR / "headset.svg"
+HEADSET_SVG = ASSETS_DIR / "eeg.svg"
 
 render_header(
     "EEG Authentication Login",

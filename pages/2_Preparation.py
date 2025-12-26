@@ -14,7 +14,7 @@ init_session_state()
 apply_custom_css()
 
 ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
-HEADSET_IMAGE = ASSETS_DIR / "headset.png"
+HEADSET_SVG = ASSETS_DIR / "headset.svg"
 
 render_header(
     "EEG Authentication Login",
@@ -27,10 +27,15 @@ st.markdown('<div class="info-card" style="text-align: center; padding: 3rem 2re
 
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    if HEADSET_IMAGE.exists():
-        st.image(HEADSET_IMAGE, use_container_width=True)
+    if HEADSET_SVG.exists():
+        try:
+            svg_markup = HEADSET_SVG.read_text(encoding="utf-8")
+            st.markdown(f'<div style="max-width: 320px; margin: 0 auto;">{svg_markup}</div>', unsafe_allow_html=True)
+        except Exception as exc:
+            st.error("Headset illustration found but could not be rendered. Please verify the SVG markup.")
+            st.exception(exc)
     else:
-        st.warning("Headset image missing from assets directory.")
+        st.warning("Headset illustration missing from assets directory.")
 
 st.markdown("""
 <p style="font-size: 0.95rem; color: #666; margin: 1.5rem 0; line-height: 1.6;">

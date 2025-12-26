@@ -1,0 +1,39 @@
+<svg width="360" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="helmetGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#c5d8ff" />
+      <stop offset="70%" stop-color="#eff3ff" />
+    </linearGradient>
+    <linearGradient id="cableGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b6c8ff" />
+      <stop offset="100%" stop-color="#8aa2ff" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(43,64,136,0.25)" />
+    </filter>
+  </defs>
+  <rect width="360" height="260" rx="24" fill="url(#helmetGradient)" opacity="0.4" />
+  <g filter="url(#shadow)">
+    <path d="M90 60 C80 80 72 120 75 150 C80 190 110 220 150 228 C210 240 270 210 290 150 C303 112 300 80 282 55 C250 12 160 15 120 30" fill="#f6f8ff" stroke="#8ca2ff" stroke-width="4" />
+    <path d="M94 82 C110 70 170 82 210 78 C240 75 270 62 286 74" stroke="#9fb3ff" stroke-width="5" stroke-linecap="round" />
+    <path d="M104 110 C130 100 210 110 248 104 C274 100 290 92 300 100" stroke="#9fb3ff" stroke-width="5" stroke-linecap="round" />
+    <path d="M118 140 C150 130 212 138 246 132 C276 127 298 130 308 138" stroke="#9fb3ff" stroke-width="5" stroke-linecap="round" />
+    <circle cx="120" cy="120" r="12" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="150" cy="102" r="10" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="190" cy="96" r="10" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="225" cy="92" r="10" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="255" cy="90" r="9" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="138" cy="142" r="11" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="178" cy="134" r="9" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="216" cy="130" r="9" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="248" cy="128" r="8" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="276" cy="126" r="8" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="156" cy="176" r="10" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="196" cy="170" r="9" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="232" cy="166" r="9" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+    <circle cx="262" cy="162" r="8" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+  </g>
+  <path d="M276 160 C300 190 315 200 334 204" stroke="url(#cableGradient)" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M328 204 Q336 212 330 218 L298 240" stroke="#7f92ff" stroke-width="5" fill="none" stroke-linecap="round" />
+  <circle cx="328" cy="204" r="8" fill="#ffffff" stroke="#7f96ff" stroke-width="3" />
+</svg>
